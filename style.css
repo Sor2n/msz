@@ -1,0 +1,102 @@
+.root {
+    -fx-background-image: url("w.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-height: 100%;
+    -fx-background-width: 100%;
+    -fx-background-min-height: 100%;
+    -fx-background-overflow: hidden;
+}
+
+.vbox {
+    -fx-font-family: "Lobster", cursive, "El Messiri", sans-serif;
+}
+
+.hbox {
+    -fx-spacing: 10.0;
+}
+
+.hyperlink {
+    -fx-text-fill: black;
+    -fx-font-size: 1.5vw;
+    -fx-text-decoration: none;
+    -fx-text-transform: uppercase;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: rgb(80, 76, 76);
+}
+
+.button {
+    -fx-font-size: 1.2rem;
+    -fx-font-weight: 700;
+    -fx-padding: 10px 20px;
+    -fx-background-color: #fff;
+    -fx-cursor: hand;
+    -fx-text-fill: #121212; /* لون النص */
+    -fx-border-radius: 12px; /* شكل الزوايا */
+    -fx-border: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px; /* تأثير الظل */
+    -fx-box-sizing: border-box;
+}
+
+.button:hover {
+    -fx-background-color: transparent;
+    -fx-box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, 0.1) 0 6px 20px;
+}
+
+#schoolTimeButton {
+    -fx-background-color: #113a0bb7;
+    -fx-color: #fff;
+    -fx-font-size: 20px;
+}
+
+#schoolTimeButton:hover {
+    -fx-background-color: #032407;
+    -fx-width: 210px;
+    -fx-height: 55px;
+}
+
+#moreInfoButton {
+    -fx-background-color: #16C79A;
+    -fx-color: #fff;
+    -fx-font-size: 30px;
+}
+
+#moreInfoButton:hover {
+    -fx-color: #121212;
+    -fx-width: 250px;
+    -fx-height: 60px;
+}
+
+.image-container {
+    -fx-display: inline-block;
+}
+
+.image-container img {
+    -fx-display: block;
+    -fx-width: 200px;
+    -fx-height: 200px;
+    -fx-transition: transform 0.5s;
+}
+
+.image-container:hover img {
+    -fx-transform: scale(1.2);
+}
+
+.image-container span {
+    -fx-display: none;
+    -fx-position: absolute;
+    -fx-top: 50%;
+    -fx-left: 50%;
+    -fx-transform: translate(-50%, -50%);
+    -fx-background-color: rgba(0, 0, 0, 0.8);
+    -fx-color: #fff;
+    -fx-font-size: 18px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-z-index: 1;
+}
+
+.image-container:hover span {
+    -fx-display: block;
+}

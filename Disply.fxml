@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="636.0" prefWidth="1072.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <HBox alignment="CENTER" prefHeight="83.0" prefWidth="1646.0" spacing="10.0" style="-fx-background-color: #cea855; -fx-background-radius: 0 0 100 100;" stylesheets="@home.css">
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+            <children>
+                <Hyperlink style="-fx-font-family: &quot;Lobster&quot;, cursive, &quot;El Messiri&quot;, sans-serif;" styleClass="buttonc" stylesheets="@home.css" text="Home">
+                    <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink prefHeight="38.0" prefWidth="239.0" style="-fx-alignment: center;" styleClass="buttonc" text="Display" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Hyperlink>
+                <Hyperlink styleClass="buttonc" text="Edit">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Hyperlink>
+            </children>
+        </HBox>
+        <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-alignment: center;" />
+      <TableView opacity="0.61" prefHeight="361.0" prefWidth="1072.0">
+        <columns>
+            <TableColumn prefWidth="161.0" text="End" />
+          <TableColumn prefWidth="158.0" text="Start" />
+          <TableColumn prefWidth="751.0" sortType="DESCENDING" text="type" />
+        </columns>
+      </TableView>
+    </children>
+</VBox>
